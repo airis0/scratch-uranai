@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スクラッチ占い</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div id="canvas-box">
+		<canvas id="parent" width="400" height="300"></canvas>
+		<canvas id="child" width="400" height="300"></canvas>
+	</div>
+
+	      <!-- オーバーレイ -->
+				<div id="overlay" class="overlay"></div>
+
+				<!-- モーダルウィンドウ -->
+				<div class="modal-window" data-id="modal1">
+					<h1>スクラッチ占い</h1>
+					<img src="./images/top-img.png" style="width: 100%;">
+					<div class="scroll-box">
+					<p>
+						スクラッチ占い。<br>
+						結果は「大吉」・「中吉」・「小吉」・「吉」・「末吉」・「凶」・「小凶」・「大凶」の8通り。<br>
+						「大吉」が一番よく、「大凶」が一番悪い。<br>
+						「Start」ボタンを押して、占い開始。<br>
+						スクラッチを削って、今日の運勢を占おう。
+					</p>
+					</div>
+					<button class="js-close button-close">Start</button>
+				</div>
+
+
+	<script src="./js/jquery-2.1.4.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
